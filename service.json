@@ -1,6 +1,9 @@
 {
   "build": {
-    "dockerfile": "minio/DOCKERFILE",
+    "dockerfile": "minio/Dockerfile",
     "context": "minio"
+  }
+  "deploy": {
+    "strategy": "docker"
   }
 }
