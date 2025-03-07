@@ -1,9 +1,0 @@
-{
-  "build": {
-    "dockerfile": "minio/Dockerfile",
-    "context": "minio"
-  }
-  "deploy": {
-    "strategy": "docker"
-  }
-}

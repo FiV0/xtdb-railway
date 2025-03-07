@@ -1,0 +1,18 @@
+version: '3'
+services:
+  minio:
+    build:
+      context: ./minio
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+      - "8080:8080"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":8080"
+
+volumes:
+  minio_data:
