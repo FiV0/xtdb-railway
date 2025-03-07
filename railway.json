@@ -1,8 +1,0 @@
-{
-  "deploy": {
-    "strategy": "docker-compose",
-    "compose": {
-      "file": "docker-compose.yaml"
-    }
-  }
-}
