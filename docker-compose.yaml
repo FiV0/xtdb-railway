@@ -18,7 +18,7 @@ services:
   kafka:
     # image: confluentinc/cp-kafka:7.7.1
     build:
-      context: .
+      context: ./kafka
       dockerfile: Dockerfile
     expose:
       - 9092
@@ -39,8 +39,6 @@ services:
       KAFKA_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
       KAFKA_INTER_BROKER_LISTENER_NAME: "PLAINTEXT"
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
-
-
 
 volumes:
   minio_data:
