@@ -2,7 +2,7 @@
   "deploy": {
     "strategy": "docker-compose",
     "compose": {
-      "file": "docker-compose.yml"
+      "file": "docker-compose.yaml"
     }
   }
 }
